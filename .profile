@@ -25,3 +25,9 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
+
+export LANG=en_US.UTF-8
+export TERM=xterm-256color
+
+#alias ll="eza -la"
+#alias cat="batcat -p"

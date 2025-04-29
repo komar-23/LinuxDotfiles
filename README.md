@@ -11,3 +11,6 @@ Following tools shall be installed before dotfiles application.
 - bat (apt-get install bat)
 - vim (apt-get install vim)
 - eza (please follow: [Eza installation instruction](https://github.com/eza-community/eza/blob/main/INSTALL.md))
+- tmux (apt-get install tmux)
+    - tpm (git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm)
+    - catppuccin (Automatic installation with tpm, please run: ~/.tmux/plugins/tpm/bin/install_plugins)

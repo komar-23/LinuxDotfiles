@@ -80,9 +80,6 @@ set wildmode=list:longest
 " Wildmenu will ignore files with these extensions.
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
-"Make comments italic
-highlight Comment cterm=italic
-
 " }}}
 
 
@@ -120,6 +117,9 @@ let mapleader = '\'
     " Set the color scheme.
     let g:gruvbox_contrast_dark='hard'
     colorscheme gruvbox
+
+"Make comments italic
+highlight Comment cterm=italic
 
     " Set a custom font you have installed on your computer.
     " Syntax: set guifont=<font_name>\ <font_weight>\ <size>

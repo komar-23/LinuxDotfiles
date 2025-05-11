@@ -26,8 +26,20 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-export LANG=en_US.UTF-8
+# set PATH so it includes nvim bin if it exists
+if [ -d "/opt/nvim-linux-arm64/bin/" ] ; then
+    PATH="/opt/nvim-linux-arm64/bin/:$PATH"
+fi
+
+export LANG=pl_PL.UTF-8
 export TERM=xterm-256color
 
 #alias ll="eza -la"
 #alias cat="batcat -p"
+# Setup fzf
+# ---------
+if [[ ! "$PATH" == */home/daniel/.fzf/bin* ]]; then
+  PATH="${PATH:+${PATH}:}/home/daniel/.fzf/bin"
+fi
+
+eval "$(fzf --bash)"

@@ -88,10 +88,10 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
-alias ll='eza -la'
-alias tree='eza -T'
-alias ls='eza'
-alias cat='batcat -p'
+alias ll='eza -la --icons=always'
+alias tree='eza -T --icons=always'
+alias ls='eza --icons=always'
+alias cat='batcat -p --color=always'
 #alias la='ls -A'
 #alias l='ls -CF'
 

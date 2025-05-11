@@ -92,6 +92,7 @@ alias ll='eza -la --icons=always'
 alias tree='eza -T --icons=always'
 alias ls='eza --icons=always'
 alias cat='batcat -p --color=always'
+alias cd='z'
 #alias la='ls -A'
 #alias l='ls -CF'
 

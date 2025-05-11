@@ -43,3 +43,4 @@ if [[ ! "$PATH" == */home/daniel/.fzf/bin* ]]; then
 fi
 
 eval "$(fzf --bash)"
+eval "$(zoxide init bash)"

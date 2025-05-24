@@ -28,13 +28,21 @@ set cursorline
 set cursorcolumn
 
 " Set shift width to 4 spaces.
-"set shiftwidth=4
+set shiftwidth=2
 
 " Set tab width to 4 columns.
-"set tabstop=4
+set tabstop=2
 
 " Use space characters instead of tabs.
-"set expandtab
+set expandtab
+
+set softtabstop=-1
+
+set smarttab
+
+set autoindent
+
+set smartindent
 
 " Do not save backup files.
 set nobackup
@@ -86,15 +94,34 @@ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 " PLUGINS ---------------------------------------------------------------- {{{
 
 " Plugin code goes here.
-
+" List of used plugins:
+"https://github.com/rhysd/clever-f.vim.git
+"https://github.com/tpope/vim-commentary.git
+"https://github.com/farmergreg/vim-lastplace.git
+"https://github.com/itchyny/lightline.vim.git
+"https://github.com/preservim/nerdtree.git
+"https://github.com/kshenoy/vim-signature.git
+"https://github.com/christoomey/vim-sort-motion.git
+"https://github.com/mbbill/undotree.git
+"https://github.com/vimwiki/vimwiki.git
+"https://github.com/tpope/vim-surround.git
+"
 " }}}
-
 
 " MAPPINGS --------------------------------------------------------------- {{{
 
 inoremap jk <esc>
-let mapleader = '\'
+nnoremap <SPACE> <Nop>
+let mapleader = ' '
 "map <Leader>d V:!/bin/date<cr>
+"
+
+set laststatus=2
+map ; <Plug>(clever-f-repeat-forward)
+map , <Plug>(clever-f-repeat-back)
+set nrformats=alpha,octal,hex,bin
+nnoremap <leader>e :NERDTreeToggle<CR>
+nnoremap <leader>u :UndotreeToggle<CR>
 
 " }}}
 
@@ -121,6 +148,7 @@ let mapleader = '\'
 "Make comments italic
 highlight Comment cterm=italic
 
+set termguicolors
     " Set a custom font you have installed on your computer.
     " Syntax: set guifont=<font_name>\ <font_weight>\ <size>
     "set guifont=Monospace\ Regular\ 12

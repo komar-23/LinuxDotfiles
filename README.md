@@ -18,3 +18,4 @@ Following tools shall be installed before dotfiles application.
 - tmux (apt-get install tmux)
     - tpm (git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm)
     - catppuccin (Automatic installation with tpm, please run: ~/.tmux/plugins/tpm/bin/install_plugins)
+- fd (apt-get install fd-find)

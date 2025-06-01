@@ -93,6 +93,7 @@ alias tree='eza -T --icons=always'
 alias ls='eza --icons=always'
 alias cat='batcat -p --color=always'
 alias cd='z'
+alias mc='EDITOR=vim mc'
 #alias la='ls -A'
 #alias l='ls -CF'
 
